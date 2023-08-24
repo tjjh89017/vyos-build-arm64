@@ -20,6 +20,9 @@ Please make sure your account has docker permission.
 
 I added some packages for build environment.
 
+> [!NOTE]
+> You could skip this step if you have latest vyos-build docker container image
+
 ```bash
 ./build-docker.sh
 ```
