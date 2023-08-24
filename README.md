@@ -8,7 +8,9 @@ Last test in 2023/08/16 with Ampere Raptor eMAG and ARM64 [VM](./vyos-arm64-libv
 
 Only build and test this script on Ampere Raptor eMAG (Native Build)
 
-vyos-build source is [tjjh89017/vyos-build@arm64](https://github.com/tjjh89017/vyos-build/tree/arm64). I have some patches to let arm64 kernel work.
+~~vyos-build source is [tjjh89017/vyos-build@arm64](https://github.com/tjjh89017/vyos-build/tree/arm64). I have some patches to let arm64 kernel work.~~
+
+Current VyOS upstream vyos-build supported basic arm64.
 
 ## Guide
 
