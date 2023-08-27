@@ -11,8 +11,8 @@ VYOS_VERSION="current"
 DOCKER_IMAGE="vyos/vyos-build:$VYOS_VERSION-arm64"
 DOCKER_EXTRA_ARGS=""
 
-VYOS_BUILD_GIT_REPO="https://github.com/vyos/vyos-build"
-VYOS_BUILD_GIT_BRANCH="current"
+VYOS_BUILD_GIT_REPO="https://github.com/tjjh89017/vyos-build"
+VYOS_BUILD_GIT_BRANCH="arm64"
 VYOS_BUILD="vyos-build"
 
 case $HOSTARCH in
