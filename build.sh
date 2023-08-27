@@ -43,8 +43,7 @@ fi
 rm -rf "$VYOS_BUILD/packages/*.deb"
 
 # build kernel
-# NOTE uncomment this command if you need to rebuild kernel
-#docker run --rm -it $DOCKER_EXTRA_ARGS -e VYOS_BUILD="$VYOS_BUILD" "$DOCKER_IMAGE" bash build-kernel.sh
+docker run --rm -it $DOCKER_EXTRA_ARGS -e VYOS_BUILD="$VYOS_BUILD" "$DOCKER_IMAGE" bash build-kernel.sh
 
 # build telegraf
 docker run --rm -it $DOCKER_EXTRA_ARGS -e VYOS_BUILD="$VYOS_BUILD" "$DOCKER_IMAGE" bash build-telegraf.sh
