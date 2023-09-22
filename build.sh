@@ -34,7 +34,7 @@ esac
 
 # clone arm64 vyos-build with patches
 if [ ! -d "$VYOS_BUILD" ]; then
-	git clone -b "$VYOS_BUILD_GIT_BRANCH" "$VYOS_BUILD_GIT_REPO" "$VYOS_BUILD"
+	git clone -b "$VYOS_BUILD_GIT_BRANCH" "$VYOS_BUILD_GIT_BUILD" "$VYOS_BUILD"
 else
 	echo "$VYOS_BUILD exists. skip git clone"
 fi
