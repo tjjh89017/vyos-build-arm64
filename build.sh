@@ -49,7 +49,7 @@ docker run --rm -it $DOCKER_EXTRA_ARGS -e VYOS_BUILD="$VYOS_BUILD" "$DOCKER_IMAG
 docker run --rm -it $DOCKER_EXTRA_ARGS -e VYOS_BUILD="$VYOS_BUILD" "$DOCKER_IMAGE" bash build-telegraf.sh
 
 # build iso
-VYOS_ISO_VERSION="1.4-rolling-$(date -u +%Y%m%d%H%M)"
+VYOS_ISO_VERSION="1.5-rolling-$(date -u +%Y%m%d%H%M)"
 docker run --rm -it $DOCKER_EXTRA_ARGS -e VYOS_BUILD="$VYOS_BUILD" -e VYOS_ISO_VERSION="$VYOS_ISO_VERSION" "$DOCKER_IMAGE" bash build-iso.sh
 
 echo "VyOS iso is in $VYOS_BUILD/build/vyos-$VYOS_ISO_VERSION-arm64.iso"
